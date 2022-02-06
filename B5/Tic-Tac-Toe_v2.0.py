@@ -107,4 +107,5 @@ while is_next_step:
     is_next_step, result_message = calculate_result(field, current_sign)
     step, current_sign = next_step(step)
 
+print_field(field)
 print(result_message)

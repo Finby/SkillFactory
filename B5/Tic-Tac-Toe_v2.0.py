@@ -105,7 +105,6 @@ while is_next_step:
     print(f'Step {step}')
     field = do_step(field, current_sign, step)
     is_next_step, result_message = calculate_result(field, current_sign)
-    if is_next_step:
-        step, current_sign = next_step(step)
+    step, current_sign = next_step(step)
 
 print(result_message)

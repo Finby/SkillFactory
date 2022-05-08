@@ -33,14 +33,14 @@ def send_do_job(message: telebot.types.Message):
             raise APIException(my_bot, message, 'Wrong number of arguments. 3 args are expected.')
             # my_bot.reply_to(message, f'your input: {message.text}')
         for _ in (0, 1):
-            if input_list[_] not in available_currencies:
+            if input_list[_].upper() not in available_currencies:
                 raise APIException(my_bot, message, f'Wrong {_ + 1} currency. Must be from a list. See /values')
         if not input_list[2].isdigit():
             raise APIException(my_bot, message, '3d parameter must be integer.')
     except APIException as e:
         print(e)
     else:
-        base_, quote_, amount_ = input_list[0], input_list[1], int(input_list[2])
+        base_, quote_, amount_ = input_list[0].upper(), input_list[1].upper(), int(input_list[2])
         price_ = ExchangeRates().get_price(base=base_, quote=quote_, amount=amount_)
         my_bot.reply_to(message, f"You need {price_} of {quote_} to buy {amount_} of {base_}")
 

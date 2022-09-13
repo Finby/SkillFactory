@@ -1,7 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a07a166-b353-4cc7-a6af-2e244f077c6f" name="Default Changelist" comment="" />
+    <list default="true" id="8a07a166-b353-4cc7-a6af-2e244f077c6f" name="Default Changelist" comment="chess project">
+      <change beforePath="$PROJECT_DIR$/.idea/SkillFactory.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SkillFactory.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/B1/.idea/B1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B1/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B1/script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B4/task_4.2.4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B4/task_4.2.5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B4/task_4.2.6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B4/task_4.3.2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B4/task_4.3.3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B4/task_4.3.4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B4/task_4.3.5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B4/task_4.3.x_Fib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B4/task_4.4.1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B4/task_4.4.2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B4/task_4.5.2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B4/task_4.5.3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B4/task_4.5.x_decorator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B4/task_4.5.x_decorator2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B4/task_4.5.x_decorator3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B5/Tic-Tac-Toe_v2.0.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B5/task_5.3.11.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B5/task_5.3.12.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B5/task_5.3.15.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B5/task_5.3.17.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B5/task_5.3.18.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B5/temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C2/sea_battle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C5/bot/applicaiton.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C5/bot/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C5/bot/extensions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chess/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chess/Bishop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chess/Chess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chess/ChessBoard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chess/ChessPiece.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chess/Horse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chess/King.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chess/Pawn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chess/Queen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chess/Rook.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,16 +58,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="5e47d91b-2476-4800-9475-601cf4296a37" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="24jeQcaftzKOpAua5jN9tFLQmRm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Projects/Java/SkillFactory/JavaCore/SkillFactory",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -42,7 +103,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="chess.App" />
+      <module name="SkillFactory1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chess.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="SkillFactory" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="SkillFactory" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -54,6 +149,29 @@
       <option name="presentableId" value="Default" />
       <updated>1644148408259</updated>
     </task>
+    <task id="LOCAL-00001" summary="chess project">
+      <created>1663092963734</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663092963735</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chess project" />
+    <option name="LAST_COMMIT_MESSAGE" value="chess project" />
   </component>
 </project>

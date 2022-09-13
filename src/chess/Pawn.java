@@ -10,8 +10,14 @@ public class Pawn extends ChessPiece {
         return color;
     }
 
-    boolean isCorrectFigureMove(int line, int column, int toLine, int toColumn) {
+    boolean isCorrectFigureMove(ChessBoard chessBoard, int line, int column, int toLine, int toColumn) {
         if (column != toColumn) {
+            if ((this.getColor().equals(WHITE) && chessBoard.board[toLine][toColumn].getColor().equals(BLACK)
+                    || this.getColor().equals(BLACK) && chessBoard.board[toLine][toColumn].getColor().equals(WHITE))
+                    && Math.abs(column - toColumn) == 1 && Math.abs(line - toLine) == 1
+            ) {
+                return true;
+            }
             return false;
         }
         if (this.getColor().equals(WHITE)) {

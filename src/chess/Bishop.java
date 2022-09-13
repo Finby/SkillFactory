@@ -11,7 +11,7 @@ public class Bishop extends ChessPiece {
     }
 
 
-    boolean isCorrectFigureMove(int line, int column, int toLine, int toColumn) {
+    boolean isCorrectFigureMove(ChessBoard chessBoard, int line, int column, int toLine, int toColumn) {
         return (Math.abs(line - toLine) == Math.abs(column - toColumn)
                 && !(line==toLine && column == toColumn));
     }

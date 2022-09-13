@@ -17,15 +17,22 @@ public abstract class ChessPiece {
 
     public boolean canMoveToPosition(ChessBoard chessBoard, int line, int column, int toLine, int toColumn) {
         if ((!checkPos(line) || !checkPos(column) || !checkPos(toLine) || !checkPos(toColumn)
-                || !isCorrectFigureMove(line, column, toLine, toColumn)
+                || !isCorrectFigureMove(chessBoard, line, column, toLine, toColumn)
                 || !isNobodyOnLine(chessBoard, line, column, toLine, toColumn)
+                    && isNotYourFigure(chessBoard, toLine, toColumn)
         )
         ) {
             return false;
         }
         return true;
     }
-    abstract boolean isCorrectFigureMove(int line, int column, int toLine, int toColumn);
+
+    private boolean isNotYourFigure(ChessBoard chessBoard, int toLine, int toColumn) {
+        return !(chessBoard.board[toLine][toColumn] != null
+                && this.getColor().equals(chessBoard.board[toLine][toColumn].getColor()));
+    }
+
+    abstract boolean isCorrectFigureMove(ChessBoard chessBoard, int line, int column, int toLine, int toColumn);
 
     public abstract String getSymbol();
     boolean checkPos(int n) {
@@ -47,10 +54,11 @@ public abstract class ChessPiece {
             currentLine += dLine;
             currentColumn += dColumn;
         }
-        if (chessBoard.board[currentLine][currentColumn] != null
-                && this.getColor().equals(chessBoard.board[currentLine][currentColumn].getColor())) {
-            return false;
-        }
+        // check if last position is occupied in canMaveMethod
+//        if (chessBoard.board[currentLine][currentColumn] != null
+//                && this.getColor().equals(chessBoard.board[currentLine][currentColumn].getColor())) {
+//            return false;
+//        }
         return true;
     }
 

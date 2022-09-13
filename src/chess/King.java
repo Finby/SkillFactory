@@ -18,7 +18,7 @@ public class King extends ChessPiece {
     @Override
     public boolean canMoveToPosition(ChessBoard chessBoard, int line, int column, int toLine, int toColumn) {
         if ((!checkPos(line) || !checkPos(column) || !checkPos(toLine) || !checkPos(toColumn) ||
-                !isCorrectFigureMove(line, column, toLine, toColumn)
+                !isCorrectFigureMove(chessBoard, line, column, toLine, toColumn)
                 || !isNobodyOnLine(chessBoard, line, column, toLine, toColumn)
                 || isUnderAttack(chessBoard, toLine, toColumn)
         )
@@ -28,21 +28,30 @@ public class King extends ChessPiece {
         return true;
     }
 
-    boolean isCorrectFigureMove(int line, int column, int toLine, int toColumn) {
+    boolean isCorrectFigureMove(ChessBoard chessBoard, int line, int column, int toLine, int toColumn) {
         return (!(line==toLine && column == toColumn)
                 && Math.abs(line - toLine) <= 1 && Math.abs(column - toColumn) <= 1
         );
     }
 
-    boolean isUnderAttack(ChessBoard board, int line, int column) {
-        String opponentColor = (getColor().equals(WHITE)) ? BLACK : WHITE;
-        Boolean isAttacked = cellIsAttacked(line, column, opponentColor);
-
-
+    public boolean isUnderAttack(ChessBoard chessBoard, int toLine, int toColumn) {
+        String opponentColor = (this.getColor().equals(WHITE)) ? BLACK : WHITE;
+        for (int i = MIN_BORDER; i < MAX_BORDER; i++) {
+            for (int j = MIN_BORDER; j < MAX_BORDER; j++) {
+                // figure and it can go to position [line][column]
+                if (chessBoard.board[i][j] != null && chessBoard.board[i][j].getColor().equals(opponentColor)
+                        && chessBoard.board[i][j].canMoveToPosition(chessBoard, i, j, toLine, toColumn)) {
+                    return true;
+                }
+            }
+        }
         return false;
     }
+
 
     private Boolean cellIsAttacked(int line, int column, String opponentColor) {
         return false;
     }
+
+
 }

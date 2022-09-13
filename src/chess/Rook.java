@@ -10,7 +10,7 @@ public class Rook extends ChessPiece {
         return color;
     }
 
-    boolean isCorrectFigureMove(int line, int column, int toLine, int toColumn) {
+    boolean isCorrectFigureMove(ChessBoard chessBoard, int line, int column, int toLine, int toColumn) {
         return (!(line==toLine && column == toColumn)
                 && (line == toLine || column == toColumn)
                 );
